@@ -1,4 +1,4 @@
-import { Box, Grid, ThemeProvider } from "@mui/material";
+import { Box, Button, Grid, ThemeProvider } from "@mui/material";
 
 export const BackGroundTemplate = (props) => {
   return (
@@ -30,8 +30,8 @@ export const Card = (props) => {
     <div
       style={{
         position: "relative",
-        boxShadow: "1px 1px 7px black",
-        background: props.style.background || "white",
+        boxShadow: "1px 1px 7px grey",
+        background: props?.style?.background || "white",
         color: "white",
         width: "255px",
         height: "137px",
@@ -44,4 +44,10 @@ export const Card = (props) => {
 };
 export const CommonGridLayout = () => {
   return <Grid container spacing={2}></Grid>;
+};
+
+export const CustomButton = (props) => {
+  return(
+    <Button></Button>
+  );
 };
