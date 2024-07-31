@@ -1,5 +1,5 @@
 import { Button, Grid } from "@mui/material";
-import { Card } from "../common/CommonStyles";
+import { Card, CustomButton } from "../common/CommonStyles";
 import styled from "@emotion/styled";
 
 // const CardButton = styled(Button, {name: ''})(({theme}) => ({
@@ -11,15 +11,15 @@ import styled from "@emotion/styled";
 const OptionsCard = () =>{
     return(
         <Card>
-            <Grid container sx={{
-                
+            <Grid container spacing="7px" sx={{
+                padding: '12px'
             }}>
-                <Grid item><Button>All</Button></Grid>
-                <Grid item><Button>UI</Button></Grid>
-                <Grid item><Button>UX</Button></Grid>
-                <Grid item><Button>Enhancement</Button></Grid>
-                <Grid item><Button>Bug</Button></Grid>
-                <Grid item><Button>Feature</Button></Grid>
+                <Grid item><CustomButton text="All"></CustomButton></Grid>
+                <Grid item><CustomButton text="UI"></CustomButton></Grid>
+                <Grid item><CustomButton text="UX"></CustomButton></Grid>
+                <Grid item><CustomButton text="Enhancement"></CustomButton></Grid>
+                <Grid item><CustomButton text="Bug"></CustomButton></Grid>
+                <Grid item><CustomButton text="Feature"></CustomButton></Grid>
             </Grid>
         </Card>
     );

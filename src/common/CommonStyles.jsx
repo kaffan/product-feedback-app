@@ -13,7 +13,7 @@ export const BackGroundTemplate = (props) => {
     // >
     <Box
       sx={{
-        height: "100vh",
+        minHeight: "100vh",
         width: "100vw",
         bgcolor: "#F7F8FD",
       }}
@@ -30,11 +30,11 @@ export const Card = (props) => {
     <div
       style={{
         position: "relative",
-        boxShadow: "1px 1px 7px grey",
+        boxShadow: "1px 4px 5px #979797",
         background: props?.style?.background || "white",
         color: "white",
         width: "255px",
-        height: "137px",
+        minHeight: "137px",
         borderRadius: "7px",
       }}
     >
@@ -48,6 +48,12 @@ export const CommonGridLayout = () => {
 
 export const CustomButton = (props) => {
   return(
-    <Button></Button>
+    <Button sx={{
+      borderRadius: '7px',
+      backgroundColor: '#F2F4FF',
+      color: '#4661E6',
+      fontWeight: 'bold' ,
+      textTransform: 'none',
+    }}>{props.text}</Button>
   );
 };
