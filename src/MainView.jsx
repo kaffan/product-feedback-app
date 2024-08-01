@@ -6,8 +6,7 @@ const Mainview = () => {
   return (
     <Fragment>
       <BackGroundTemplate>
-      <SuggestionsView />
-      
+        <SuggestionsView />
       </BackGroundTemplate>
     </Fragment>
   );

@@ -14,7 +14,7 @@ export const BackGroundTemplate = (props) => {
     <Box
       sx={{
         minHeight: "100vh",
-        width: "100vw",
+        minWidth: "100%",
         bgcolor: "#F7F8FD",
       }}
     >
