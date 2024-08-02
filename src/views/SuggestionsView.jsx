@@ -16,7 +16,7 @@ const SuggestionsView = () => {
         // paddingLeft: "",
       }}
     >
-      <Grid item key={1}>
+      <Grid item key={1} sx={{flexGrow: '0.05'}}>
         <Grid container direction="column" spacing={6} columnSpacing={6}>
           <Grid item key={1}>
              <FeedbackCard />
@@ -29,7 +29,7 @@ const SuggestionsView = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item sx={{width: '55%'}}>
+      <Grid item sx={{flexGrow: '2'}}>
         <Suggestions />
       </Grid>
     </Grid>
